@@ -5,9 +5,9 @@ import java.sql.DriverManager;
 
 public class DB {
 
-    private static DB instance;
     private static final int MAX_CON = 5;
     private static final Connection[] bafer = new Connection[MAX_CON];
+    private static DB instance;
     private int first = 0, last = 0, free = MAX_CON;
 
     private DB() {
